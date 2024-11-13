@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+body {
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    border-color: #00815d;
+    background-color: #00815d;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #00815d;
+    background-color: #ffffff;
+}
+
+.btn-primary:disabled {
+    color: black;
+    border-color: lightgrey;
+    background-color: lightgrey;
+}
+
+.btn-primary:disabled:hover,
+.btn-primary:disabled:focus {
+    color:black;
+    background-color: lightgrey;
+}
+
+main {
+    height: 100vh;
+}
+
+.contact-us-form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-form .container {
+    position: relative;
+    max-width: 623px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.contact-us-form form {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+    border: 1px solid #d4d4d5;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contact-us-form form .error {
+    display: none;
+    color: #9f3a38;
+    margin-top: 5px;
+}
+
+.contact-us-form form .error.show {
+    display: block;
+}
+
+.contact-us-form .form-group {
+    width: 100%;
+}
+
+.contact-us-form .form-group .form-label {
+    display: block;
+    color: rgb(0 0 0 / 87%);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.contact-us-form .form-group .form-control {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    border-radius: 4px;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    background: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 transparent inset;
+    padding: .67857143em 1em;
+    outline: 0;
+    &:placeholder {
+        color: rgba(0, 0, 0, .87);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    &:focus {
+        color: rgba(0, 0, 0, .95);
+        border-color: #85B7D9;
+        background: #FFFFFF;
+        box-shadow: 0 0 0 0 rgba(34, 36, 38, .35) inset;
+    }
+}
+
+.contact-us-form .form-group textarea.form-control {
+    resize: none;
+}
+
+.contact-us-form .form-group .form-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.contact-us-form .form-group .form-group-col {
+    width: calc(100% / 2);
+    padding: 0 15px;
+}
+
+.contact-us-form .form-group.form-email-consent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-us-form .form-group.form-email-consent input {
+    margin: 0;
+}
+
+.contact-us-form .form-group.form-email-consent .form-label {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.thank-you {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 4px;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    background-color: #ffffff;
+}
+
+.thank-you.active {
+    display: flex;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | Fern</title>
+
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+
+    <!-- Lato - google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./form-validation.css">
+</head>
+
+<body>
+    <main>
+        <section class="contact-us-form">
+            <div class="container">
+                <form novalidate>
+                    <div class="form-group form-name">
+                        <label for="Name" class="form-label">Name</label>
+                        <div class="form-group-row">
+                            <div class="form-group form-group-col">
+                                <input type="text" id="firstName" class="form-control" placeholder="John" name="Name" required>
+                                <span class="error">First name is required</span>
+                            </div>
+                            <div class="form-group form-group-col">
+                                <input type="text" id="lastName" class="form-control" placeholder="Smith" name="Name" required>
+                                <div class="error">Last name is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-company">
+                        <label for="Company" class="form-label">Company</label>
+                        <input type="text" id="companyName" class="form-control" placeholder="Company" name="Company" required>
+                        <span class="error">Company is required</span>
+                    </div>
+                    <div class="form-group form-email">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" id="emailId" class="form-control" placeholder="Email"
+                            name="Email" minlength="8" required>
+                        <span class="error">Email is required</span>
+                    </div>
+                    <div class="form-group form-phone">
+                        <label for="Phone" class="form-label">Phone</label>
+                        <input type="tel" id="phoneNumber" class="form-control" placeholder="(415) 555-9865" name="Phone" minlength="10" maxlength="10" required>
+                        <span class="error">Phone is required</span>
+                    </div>
+                    <div class="form-group form-topics">
+                        <label for="Topics" class="form-label">What topics would you like to discuss with us? (Maximum 255 Characters)</label>
+                        <textarea name="" id="topicAddress" class="form-control" placeholder="What topics would you like to discuss with us?" name="Topics" maxlength="255" rows="4" required></textarea>
+                        <span class="error">Topic to be discussed is required</span>
+                    </div>
+                    <div class="form-group form-email-consent">
+                        <input type="checkbox" id="emailConsent" required>
+                        <label for="email-consent" class="form-label">I consent to be contacted by Fern Software via email</label>
+                        <span class="error">Due to regulatory requirements we require your consent to be contacted by email</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" disabled>Contact Us</button>
+                </form>
+                <div class="thank-you">Thank you</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./form-validation.js"></script>
+</body>
+
+</html>
